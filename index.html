@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML + CSS</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <h1>Cadastro de dados de clientes</h1>
+      <div class="Dados_de_contato">
+        <label for="nome"
+          >Nome:
+          <input type="text" />
+        </label>
+        <label for="email"
+          >Email:
+          <input type="email" />
+        </label>
+        <form method="get" action=".">
+          <label
+            >Cep:
+            <input
+              name="cep"
+              type="text"
+              id="cep"
+              value=""
+              size="10"
+              maxlength="9"
+              onblur="pesquisacep(this.value);" /></label
+          ><br />
+          <label>Rua: <input name="rua" type="text" id="rua" size="60" /></label
+          ><br />
+          <label
+            >Bairro:
+            <input name="bairro" type="text" id="bairro" size="40" /></label
+          ><br />
+          <label
+            >Cidade:
+            <input name="cidade" type="text" id="cidade" size="40" /></label
+          ><br />
+          <label>Estado: <input name="uf" type="text" id="uf" size="2" /></label
+          ><br />
+          <label class="hide"
+            >IBGE: <input name="ibge" type="text" id="ibge" size="8" /></label
+          ><br />
+        </form>
+      </div>
+      <div class="Dados_estatisticos"></div>
+    </main>
+  </body>
+</html>
